@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-palavras)
+}
+:root{
+    --cor-principal: rgb(1, 8, 14);
+    --cor-palavras: rgb(194, 224, 250);
+    --cor-terciaria: rgb(127, 236, 255);
+    --fonte-de-codigo: "Chakra Petch", sans-serif;
+}
+body{
+    background-color: rgb(1, 8, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    padding: 10px 50px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-link{
+    color: rgb(215, 249, 255);
+    font-weight: bold;
+    margin: 0px 15px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: color 300ms ease;
+    transition: background-color 300ms ease;
+}
+.nav-link:hover{
+    color: var(--cor-principal);
+    background-color: var(--cor-palavras);
+}
+.icon{
+    color: rgb(1, 8, 14);
+    font-size: 30px;
+    background-color: rgb(194, 224, 250);
+    padding: 6px;
+    border-radius: 8px;
+}
+.botao-login{
+    color: var(--cor-principal);
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgb(127, 236, 255);
+    border: none;
+    border-radius: 8px;
+}
+.cursos-h1{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.section-front-end h1{
+    font-family: var(--fonte-de-codigo);
+    font-size: 42px;
+}
+.cards-front-end{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-curso{
+    width: 23vw;
+    border: solid 1px rgb(2, 34, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: rgb(2, 16, 23);
+    min-width: 300px;
+}
+.card-description h3{
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: var(--fonte-de-codigo);
+}
+.card-description p{
+    margin-left: 5px;
+}
+#card-html h3{
+    color: rgb(230, 94, 61);;
+}
+.icon-curso{
+    font-size: 10rem;
+}
+.icon-html{
+    color: rgb(230, 94, 61);
+}
+.icon-css{
+    color: rgb(33, 76, 229);
+}
+@media (max-width: 745px) {
+    .nav-link{
+        display: none
+    }
+}
+@media (max-width: 367px) {
+    .card-curso{
+        min-width: 250px;
+    }
+}
