@@ -63,8 +63,6 @@ nav .nav-list{
 .cursos-h1{
     margin-left: 30px;
     margin-top: 40px;
-}
-.section-front-end h1{
     font-family: var(--fonte-de-codigo);
     font-size: 42px;
 }
@@ -74,7 +72,7 @@ nav .nav-list{
     flex-wrap: wrap;
 }
 .card-curso{
-    width: 23vw;
+    width: 20vw;
     border: solid 1px rgb(2, 34, 49);
     display: flex;
     flex-direction: column;
@@ -84,6 +82,12 @@ nav .nav-list{
     margin: 30px;
     background-color: rgb(2, 16, 23);
     min-width: 300px;
+    transition: transform 300ms ease;
+}
+.card-curso:hover{
+    transform: translate(0px, -6px);
+    border-color: rgb(3, 60, 87);
+    cursor: pointer;
 }
 .card-description h3{
     margin-bottom: 5px;
@@ -94,7 +98,16 @@ nav .nav-list{
     margin-left: 5px;
 }
 #card-html h3{
-    color: rgb(230, 94, 61);;
+    color: rgb(230, 94, 61);
+}
+#card-css h3{
+    color: rgb(33, 76, 229);
+}
+#card-js h3{
+    color: rgb(247, 224, 24);
+}
+#card-react h3{
+    color: rgb(97, 218, 251);
 }
 .icon-curso{
     font-size: 10rem;
@@ -105,6 +118,36 @@ nav .nav-list{
 .icon-css{
     color: rgb(33, 76, 229);
 }
+.icon-js{
+    color: rgb(247, 224, 24);
+}
+.icon-react{
+    color: rgb(97, 218, 251);
+}
+.ver-mais{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.ver-mais button{
+    width: 9rem;
+    padding: 10px;
+    background-color: rgb(79, 241, 187);
+    border: none;
+    color: var(--cor-principal);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.explicacao-front h2{
+    margin-left: 30px;
+    font-family: var(--fonte-de-codigo);
+    font-size: 30px;
+}
+.explicacao-front p{
+    margin: 15px 40px;
+}
+
 @media (max-width: 745px) {
     .nav-link{
         display: none
@@ -113,5 +156,13 @@ nav .nav-list{
 @media (max-width: 367px) {
     .card-curso{
         min-width: 250px;
+    }
+}
+@media (max-width: 314px){
+    .cursos-h1{
+        font-size: 35px;
+    }
+    .card-curso{
+        min-width: 220px;
     }
 }
