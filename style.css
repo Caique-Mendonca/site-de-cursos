@@ -13,6 +13,9 @@
     --cor-terciaria: rgb(127, 236, 255);
     --fonte-de-codigo: "Chakra Petch", sans-serif;
 }
+abbr{
+    text-decoration: none;
+}
 body{
     background-color: rgb(1, 8, 14);
     display: flex;
@@ -60,11 +63,11 @@ nav .nav-list{
     color: var(--cor-principal);
     font-weight: bold;
     padding: 10px 20px;
-    background-color: rgb(127, 236, 255);
+    background-color: rgb(79, 241, 187);
     border: none;
     border-radius: 8px;
 }
-.cursos-h1{
+.cursos-h1, .inscreva-se{
     margin-left: 30px;
     margin-top: 20px;
     font-family: var(--fonte-de-codigo);
@@ -194,10 +197,55 @@ nav .nav-list{
     font-family: var(--fonte-de-codigo);
     font-size: 30px;
 }
-.explicacao-front p, .explicacao-back p{
+.explicacao-front p, .explicacao-back p, .inscricao p{
     margin: 15px 40px;
 }
-
+.section-back-end{
+    border-bottom: 1px rgb(2, 34, 49) solid;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px rgb(2, 34, 49) solid;
+    padding-bottom: 20px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario form input{
+    margin: 8px 0px;
+    background-color: transparent;
+    border: 2px solid rgb(2, 34, 49);
+    border-radius: 8px;
+    padding: 6px;
+    width: 20rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.formulario form button{
+    width: fit-content;
+    background-color: transparent;
+    border: 2px solid rgb(79, 241, 187);
+    padding: 6px;
+    border-radius: 8px;
+    color: rgb(79, 241, 187);
+    margin: 0px 10px;
+    font-family: 'Inter', sans-serif;
+}
+#limpar-botao{
+    color: brown;
+    border: brown solid 2px;
+}  
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
 @media (max-width: 745px) {
     .nav-link{
         display: none
@@ -206,6 +254,9 @@ nav .nav-list{
 @media (max-width: 367px) {
     .card-curso{
         min-width: 250px;
+    }
+    .formulario form input{
+        width: 18rem;
     }
 }
 @media (max-width: 314px){

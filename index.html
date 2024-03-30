@@ -30,7 +30,9 @@
             <div class="card-curso" id="card-html">
                 <i class="icon-curso icon-html fa-brands fa-html5"></i>
                 <div class="card-description">
-                    <h3>HTML5</h3>
+                    <abbr title="HyperText Markup Language">
+                        <h3>HTML5</h3>
+                    </abbr>
                     <p>Aprenda a como fazer seu primeiro site e as estruturas básicas usadas em todos os sites do mundo de maneira fácil e intuitiva.
                     </p><br>
                 <div class="ver-mais">
@@ -41,7 +43,9 @@
             <div class="card-curso" id="card-css">
                 <i class="icon-curso icon-css fa-brands fa-css3-alt"></i>
                 <div class="card-description">
-                    <h3>CSS3</h3>
+                    <abbr title="Cascading Style Sheets">
+                        <h3>CSS3</h3>
+                    </abbr>
                     <p>Aprenda a como aplicar estilos, cores e animações aos seus sites, deixando o seu site bonito e vivo, fazendo com que fiquem atraentes aos olhos do usuário.
                     </p>
                 </div>
@@ -114,7 +118,9 @@
             <div class="card-curso" id="card-php">
                 <i class="icon-curso icon-php fa-brands fa-php"></i>
                 <div class="card-description">
-                    <h3>PHP</h3>
+                    <abbr title="PHP: Hypertext Preprocessor">
+                        <h3>PHP</h3>
+                    </abbr>
                     <div class="ver-mais">
                         <a href=""><button>Veja mais</button></a>
                     </div>
@@ -148,6 +154,38 @@
             </p>
         </div>
     </section>
-
+    <section class="inscricao">
+        <div>
+            <h1 class="inscreva-se">Inscreva-se:</h1>
+            <p>Inscreva-se para ficar por dentro de nossos cursos de programação em primeira mão!</p>
+        </div>
+        <div class="formulario">
+            <form action="" method="get">
+                <input type="text" id="nome" placeholder="Nome:">
+                <input type="email" name="" id="email" placeholder="Email:">
+                <input type="tel" name="" id="telefone" placeholder="Telefone:">
+                <input type="number" name="" id="numero" placeholder="Idade:">
+                <div style="display: flex;
+                            justify-content: center;">
+                    <button type="submit">Inscrever-se</button>
+                    <button type="reset" id="limpar-botao">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div style="margin-bottom: 20px;">
+            <address style="display: flex; ">
+                <p>Contato:</p>
+                <strong>(85) 12345-6789</strong>
+            </address>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://github.com/Caique-Mendonca">
+                <i style="font-size: 35px;" class="fa-brands fa-github"></i>
+            </a>
+            <p>Feito por <a href="https://github.com/Caique-Mendonca">Caique Mendonça</a></p>
+        </div>
+    </footer>
 </body>
 </html>
