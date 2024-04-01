@@ -66,6 +66,13 @@ nav .nav-list{
     background-color: rgb(79, 241, 187);
     border: none;
     border-radius: 8px;
+    transition: background-color 300ms ease;
+    transition: transform 300ms ease;
+}
+.botao-login:hover{
+    background-color: var(--cor-palavras);
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .cursos-h1, .inscreva-se{
     margin-left: 30px;
