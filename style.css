@@ -40,6 +40,13 @@ nav .nav-list{
     justify-content: space-between;
     list-style: none;
 }
+.nav-list a{
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+.nav-list a:hover{
+    color: rgb(79, 241, 187);
+}
 .nav-link{
     color: rgb(215, 249, 255);
     font-weight: bold;
@@ -47,10 +54,6 @@ nav .nav-list{
     padding: 8px;
     border-radius: 10px;
     transition: color, background-color, 300ms ease;
-}
-.nav-link:hover{
-    color: var(--cor-principal);
-    background-color: var(--cor-palavras);
 }
 .icon{
     color: rgb(1, 8, 14);
