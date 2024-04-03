@@ -12,6 +12,7 @@
     --cor-palavras: rgb(194, 224, 250);
     --cor-terciaria: rgb(127, 236, 255);
     --fonte-de-codigo: "Chakra Petch", sans-serif;
+    --verde-bonito: rgb(79, 241, 187);
 }
 abbr{
     text-decoration: none;
@@ -45,7 +46,7 @@ nav .nav-list{
     transition: color 300ms ease;
 }
 .nav-list a:hover{
-    color: rgb(79, 241, 187);
+    color: var(--verde-bonito);
 }
 .nav-link{
     color: rgb(215, 249, 255);
@@ -66,7 +67,7 @@ nav .nav-list{
     color: var(--cor-principal);
     font-weight: bold;
     padding: 10px 20px;
-    background-color: rgb(79, 241, 187);
+    background-color: var(--verde-bonito);
     border: none;
     border-radius: 8px;
     transition: background-color 300ms ease;
@@ -190,7 +191,7 @@ nav .nav-list{
 .ver-mais button{
     width: 9rem;
     padding: 10px;
-    background-color: rgb(79, 241, 187);
+    background-color: var(--verde-bonito);
     border: none;
     color: var(--cor-principal);
     font-size: 15px;
@@ -238,10 +239,10 @@ nav .nav-list{
 .formulario form button{
     width: fit-content;
     background-color: transparent;
-    border: 2px solid rgb(79, 241, 187);
+    border: 2px solid var(--verde-bonito);
     padding: 6px;
     border-radius: 8px;
-    color: rgb(79, 241, 187);
+    color: var(--verde-bonito);
     margin: 0px 10px;
     font-family: 'Inter', sans-serif;
 }
@@ -271,7 +272,7 @@ footer{
     margin: 10px;
 }
 #aprovacao-progress{
-    background-color: rgb(79, 241, 187);
+    background-color: var(--verde-bonito);
     border-radius: 8px;
 } 
 
