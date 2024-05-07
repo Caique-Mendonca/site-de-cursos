@@ -23,6 +23,31 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.header-background{
+    background-image: url(images/pexels-nemuel-6424583.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 1px 120px var(--cor-principal);
+}
+.header-background div h1{
+    margin-left: 35px;
+    font-size: 50px;
+    font-family: var(--fonte-de-codigo);
+}
+.header-background div{
+    background-color: var(--cor-principal);
+    box-shadow: 20px 0px 20px var(--cor-principal);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header{
     padding: 10px 50px;
     position: sticky;
@@ -276,9 +301,31 @@ footer{
     border-radius: 8px;
 } 
 
+@media (max-width: 906px){
+    .header-background div{
+        width: 50%;
+    }
+    .header-background div h1{
+        font-size: 40px;
+    }
+}
 @media (max-width: 745px) {
     .nav-link{
         display: none
+    }
+}
+@media (max-width: 662px){
+    .header-background div{
+        width: 50%;
+    }
+    .header-background div h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 433px) {
+    .header-background div h1{
+        font-size: 25px;
+        margin-left: 20px;
     }
 }
 @media (max-width: 367px) {
@@ -295,5 +342,8 @@ footer{
     }
     .card-curso{
         min-width: 220px;
+    }
+    .header-background div h1{
+        font-size: 20px;
     }
 }
